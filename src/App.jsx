@@ -9,6 +9,7 @@ function App() {
     advice: "Click now"
   })
   const {advice, id} = consejo;
+
   //CONSULTA API
   const url = "https://api.adviceslip.com/advice";
   //FUNCION ASINCRONA
@@ -27,7 +28,7 @@ function App() {
 
   return (
 
-    <div className=" bg-slate-700 p-4 text-center max-w-sm  md:max-w-lg  my-60 mx-auto rounded-xl shadow-lg flex justify-evenly items-center flex-col align-middle ">
+    <div className=" bg-slate-700 p-4 text-center max-w-sm  md:max-w-lg  my-60 mx-auto rounded-xl shadow-lg flex justify-evenly items-center flex-col">
 
       <h1 key={id} className='text-green-400 mb-5 tracking-widest font-bold uppercase'>advise #{id}</h1>
 
